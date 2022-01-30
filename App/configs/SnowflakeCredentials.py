@@ -1,0 +1,6 @@
+USERNAME = '<username>'
+PASSWORD = '<password>'
+ACCOUNT_IDENTIFIER = '<account-identifier>'
+WAREHOUSE = '<warehouse>'
+DATABASE = '<database>'
+SCHEMA = '<schema>'
