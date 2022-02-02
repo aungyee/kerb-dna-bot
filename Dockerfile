@@ -1,6 +1,6 @@
 FROM python:3.9.7
 
-WORKDIR /kerb_box_notification_logger
+WORKDIR /kerb_dna_slack_bot
 
 COPY requirements.txt .
 

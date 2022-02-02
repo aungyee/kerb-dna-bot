@@ -11,9 +11,10 @@ app = App(token=BOT_TOKEN)
 if __name__ == '__main__':
     SocketModeHandler(app, APP_LEVEL_TOKEN).start()
 
-    # infinitely send message to Slack channel every day
-    while True:
-        message = DailySlackReport.getMessage()
-        helper.sendTextMessage(app, '<channel_id>', message)
-        time.sleep(86400)
+# infinitely send message to Slack channel every day
+while True:
+    message = DailySlackReport.getMessage()
+    helper.sendTextMessage(app, 'C02EM7MMFCJ', message)
+    time.sleep(86399.8)
+
 
