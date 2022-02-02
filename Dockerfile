@@ -1,6 +1,6 @@
 FROM python:3.9.7
 
-WORKDIR /kerb_dna_slack_bot
+WORKDIR /App
 
 COPY requirements.txt .
 
