@@ -138,7 +138,7 @@ dmypy.json
 cython_debug/
 
 # App Secrets and Configurations
-# configs
+configs
 
 # Mac Finder
 .DS_Store
