@@ -139,6 +139,8 @@ cython_debug/
 
 # App Secrets and Configurations
 configs
+SlackCredentials.py
+SnowflakeCredentials.py
 
 # Mac Finder
 .DS_Store
