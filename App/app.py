@@ -7,17 +7,16 @@ from configs.SlackCredentials import BOT_TOKEN, APP_LEVEL_TOKEN
 
 app = App(token=BOT_TOKEN)
 
-socket = SocketModeHandler(app, APP_LEVEL_TOKEN)
+# infinitely send message to Slack channel every day
+while True:
+    message = DailySlackReport.getMessage()
+    helper.sendTextMessage(app, 'C02EM7MMFCJ', message)
+    time.sleep(86399.8)
+
 
 if __name__ == '__main__':
-    socket.start()
+    SocketModeHandler(app, APP_LEVEL_TOKEN).start()
 
-# infinitely send message to Slack channel every day
-
-message = DailySlackReport.getMessage()
-helper.sendTextMessage(app, 'C02EM7MMFCJ', message)
-
-socket.close()
 
 
 
