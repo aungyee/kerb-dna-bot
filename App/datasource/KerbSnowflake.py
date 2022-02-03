@@ -1,5 +1,8 @@
+import sys
+sys.path.append('..')
+
 import snowflake.connector
-from App.configs.SnowflakeCredentials import USERNAME, PASSWORD, WAREHOUSE, ACCOUNT_IDENTIFIER, DATABASE, SCHEMA
+from configs.SnowflakeCredentials import USERNAME, PASSWORD, WAREHOUSE, ACCOUNT_IDENTIFIER, DATABASE, SCHEMA
 
 
 # Create a snowflake connection

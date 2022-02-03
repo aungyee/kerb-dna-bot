@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 COPY /App .
 
-CMD ["python","./app.py"]
+CMD ["python3","./app.py"]

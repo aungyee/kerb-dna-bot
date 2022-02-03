@@ -1,5 +1,8 @@
+import sys
+sys.path.append('..')
+
 import pandas as pd
-from App.datasource.KerbSnowflake import querySnowflake
+from datasource.KerbSnowflake import querySnowflake
 
 
 def getMessage():
